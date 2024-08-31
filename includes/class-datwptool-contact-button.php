@@ -11,10 +11,11 @@ if ( ! class_exists( 'DATWPTool_Contact_Button' ) ) {
         }
 
         public function render_contact_button() {
-            $plugin_url = DATWPTOOL_PLUGIN_URL . 'assets/css/images/icon-contact/';
+            $plugin_url = DATWPTOOL_PLUGIN_URL . 'assets/images/icon-contact/';
+            
             $link_order = esc_url( get_option('datwptool_link_order') );
             $link_zalo = esc_url( get_option('datwptool_link_zalo') );
-            $link_phone = esc_url( get_option('datwptool_link_phone') );
+            $link_phone = esc_url(get_option('datwptool_link_phone') );
             $link_messenger = esc_url( get_option('datwptool_link_messenger') );
             $link_sms = esc_url( get_option('datwptool_link_sms') );
 

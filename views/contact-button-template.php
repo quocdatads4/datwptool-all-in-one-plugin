@@ -1,9 +1,9 @@
 <div class="giuseart-nav">
     <ul>
         <li><a href="<?php echo $link_order; ?>" rel="nofollow" target="_blank"><i class="ticon-heart"></i>Đặt hàng</a></li>
-        <li><a href="<?php echo $link_zalo; ?>" rel="nofollow" target="_blank"><i class="ticon-zalo-circle2"></i>Chat Zalo</a></li>
+        <li><a href="https://zalo.me/<?php echo str_replace(['http://', 'https://'], '', $link_zalo); ?>" rel="nofollow" target="_blank"><i class="ticon-zalo-circle2"></i>Chat Zalo</a></li>
         <li class="phone-mobile">
-            <a href="tel:<?php echo $link_phone; ?>" rel="nofollow" class="button">
+            <a href="tel:<?php echo str_replace(['http://', 'https://'], '', $link_phone); ?>" rel="nofollow" class="button">
                 <span class="phone_animation animation-shadow">
                     <i class="icon-phone-w" aria-hidden="true"></i>
                 </span>
@@ -11,8 +11,8 @@
             </a>
         </li>
         <li><a href="<?php echo $link_messenger; ?>" rel="nofollow" target="_blank"><i class="ticon-messenger"></i>Messenger</a></li>
-        <li><a href="<?php echo $link_sms; ?>" class="chat_animation">
-        <i class="ticon-chat-sms" aria-hidden="true" title="Nhắn tin sms"></i>Nhắn tin SMS</a></li>
+        <li><a href="sms:<?php echo str_replace(['http://', 'https://'], '', $link_sms); ?>" class="chat_animation">
+            <i class="ticon-chat-sms" aria-hidden="true" title="Nhắn tin sms"></i>Nhắn tin SMS</a></li>
         <li class="to-top-pc">
             <a href="#" rel="nofollow">
                 <i class="ticon-angle-up" aria-hidden="true" title="Quay lên trên"></i>

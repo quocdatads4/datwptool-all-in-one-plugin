@@ -14,3 +14,4 @@ if ( ! class_exists( 'DATWPTool_Settings' ) ) {
         }
     }
 }
+
